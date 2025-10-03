@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_hello
+    description: "Sanity model to verify dbt runs"
+    columns:
+      - name: id
+        tests:
+          - not_null
+      - name: msg
+        tests:
+          - not_null
